@@ -25,12 +25,11 @@ jobs:
         id: detect-package-manager
         run: |
           cd blog
-          ls
           if [ -f "yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_ENV
             echo "command=install" >> $GITHUB_ENV
             echo "runner=yarn" >> $GITHUB_ENV
-          elif [ -f "package.json" ]; then
+          elif [ -f "package-lock.json" ]; then
             echo "manager=npm" >> $GITHUB_ENV
             echo "command=ci" >> $GITHUB_ENV
             echo "runner=npx --no-install" >> $GITHUB_ENV
@@ -72,7 +71,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: blog/out # Ensure the correct output path
+          path: blog/out  # Ensure the correct output path
 
   deploy:
     environment:
@@ -85,4 +84,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          branch: gh-pages # You can specify the branch if needed
+          branch: gh-pages  # You can specify the branch if needed
