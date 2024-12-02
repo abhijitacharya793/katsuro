@@ -16,12 +16,12 @@ export function Header({ active_page }: HeaderProps) {
           <a href="tel:+919810252704">
             <button
               color="border-app-yellow"
-              fill="bg-app-purple"
-              fontcolor="text-white"
-              text="Call - 98102 52704"
-              hover_color={"hover:border-app-yellow"}
-              hover_fill={"hover:bg-app-yellow"}
-              hover_fontcolor={"hover:text-app-purple"}
+              // fill="bg-app-purple"
+              // fontcolor="text-white"
+              // text="Call - 98102 52704"
+              // hover_color={"hover:border-app-yellow"}
+              // hover_fill={"hover:bg-app-yellow"}
+              // hover_fontcolor={"hover:text-app-purple"}
             />
           </a>
         </div>
@@ -41,12 +41,12 @@ export function Header({ active_page }: HeaderProps) {
           <a href="/reservation">
             <button
               color="border-app-yellow"
-              fill="bg-app-yellow"
-              fontcolor="text-app-purple"
-              text="Reservation"
-              hover_color={"hover:border-app-yellow"}
-              hover_fill={"hover:bg-app-purple"}
-              hover_fontcolor={"hover:text-app-yellow"}
+              // fill="bg-app-yellow"
+              // fontcolor="text-app-purple"
+              // text="Reservation"
+              // hover_color={"hover:border-app-yellow"}
+              // hover_fill={"hover:bg-app-purple"}
+              // hover_fontcolor={"hover:text-app-yellow"}
             />
           </a>
         </div>
