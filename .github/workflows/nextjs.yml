@@ -25,6 +25,7 @@ jobs:
         id: detect-package-manager
         run: |
           cd blog
+          ls
           if [ -f "yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_ENV
             echo "command=install" >> $GITHUB_ENV
